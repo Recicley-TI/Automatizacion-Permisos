@@ -1,0 +1,108 @@
+# Lista blanca de carpetas monitoreadas por script.py
+# ---------------------------------------------------------------
+# Una ruta por linea, RELATIVA a la raiz de Calidad-Gestoria:
+#   /volume4/Contraloría/1.Calidad-Gestoría  (ver _BASE_CALIDAD en script.py)
+#
+# Lineas vacias y las que inician con # se ignoran.
+# Para agregar o quitar una carpeta monitoreada, edita este archivo -
+# no es necesario tocar script.py.
+# ---------------------------------------------------------------
+
+# 1. Permisos de Recolección y Traslado - Recicley MX
+1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Estado de México
+1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Queretaro
+1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/RAMIR RMX
+1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Residuos Peligrosos
+
+# 1. Permisos de Recolección y Traslado - RMO
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Coahuila
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guanajuato
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Herreros
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Nave 27
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Puebla
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Ramir RMO
+1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Residuos Peligrosos
+
+# 2. Permisos Planta de Separación (Segregación) - Recicley MX
+2.Permisos Planta de Separación (Segregacion)/Recicley MX S.A. de C.V.
+
+# 3. Licencias de Funcionamiento - Foráneos
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Guadalajara
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Puebla
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/San Luis Potosí
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Xhala
+
+# 3. Licencias de Funcionamiento - Toluca
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/1.Bascula
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/2.CAF-Contables
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/3.Composta Viejita
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/4.Destrucciones
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/5.Ducto de gas
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/6.El dorado
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/7.Madera Hidalgo
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/8.Madera Independencia
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/9.Segregacion I
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/10.Madera Matamoros
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/11.Segregación II
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/12.Plásticos
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/13.Triangulo Chatarra
+3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/14.Segregacion III
+
+# 4. Permisos de Aprovechamiento - RMO
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/1.Bascula
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/2.CAF-Contables
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/3.Destrucciones
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/4.Plásticos
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/5. Composta
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
+4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
+
+# 18. Cedula de Zonificación
+18.Cedula de Zonificación/1.Xhala 2
+18.Cedula de Zonificación/2.Composta viejita
+18.Cedula de Zonificación/3.Composta 2
+18.Cedula de Zonificación/4.Patio de maniobras
+18.Cedula de Zonificación/5.Reci 16-Taller
+18.Cedula de Zonificación/6.Segregacion III
+18.Cedula de Zonificación/7.Frente a Johnson
+18.Cedula de Zonificación/8.Madera Matamoros
+18.Cedula de Zonificación/9.Ducto de gas
+18.Cedula de Zonificación/10.El dorado
+18.Cedula de Zonificación/11.Almacen Johnson
+18.Cedula de Zonificación/12.Reci 012
+18.Cedula de Zonificación/13.Chatarra
+18.Cedula de Zonificación/14.Plásticos
+18.Cedula de Zonificación/15.Cruz Blanca
+18.Cedula de Zonificación/16.Triangulo Chatarra
+18.Cedula de Zonificación/17.Segregacion I y II
+18.Cedula de Zonificación/18.Xhala 1
+
+# 19. Movilidad Vial GDL y SLP
+19.Movilidad Vial GDL y SLP
+
+# 20. Factibilidad Vial
+20.Factibilidad Vial/1.San Luis Potosí
+20.Factibilidad Vial/2.Guadalajara
+
+# 21. NISS - Recibo Pago de agua y Saneamiento
+21.NISS-Recibo Pago de agua y Saneamiento/1.Bascula
+21.NISS-Recibo Pago de agua y Saneamiento/2.Reci 16-Taller
+21.NISS-Recibo Pago de agua y Saneamiento/3.CAF-Contables
+21.NISS-Recibo Pago de agua y Saneamiento/4.Destrucciones
+21.NISS-Recibo Pago de agua y Saneamiento/5.Estacionamiento
+21.NISS-Recibo Pago de agua y Saneamiento/6.Johnson
+21.NISS-Recibo Pago de agua y Saneamiento/7.Plasticos
+
+# 22. Poliza vs Daños Vigente al 30052027
+22.Poliza vs Daños Vigente al 30052027
+
+# 23. Factibilidad de agua y drenaje
+23.Factibilidad de agua y drenaje/1.Reci 16-Taller
+23.Factibilidad de agua y drenaje/2.CAF-Contables
+23.Factibilidad de agua y drenaje/3.Composta Viejita
+
+# 24. Autorizacion para deposito de RSU en sitio SLP
+24.Autorizacion para depósito de RSU en sitio SLP
