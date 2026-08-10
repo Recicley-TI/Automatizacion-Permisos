@@ -58,7 +58,11 @@ PREFIJO_ACUSE = "ACUSE_"
 # ========================================
 
 # REGEX PARA EXTRAER LA FECHA DE VENCIMIENTO DEL NOMBRE DEL ARCHIVO PDF
-PATRON = re.compile(r"(\d{2}-\d{2}-\d{4})\.pdf$", re.IGNORECASE)
+# Exige el formato exacto NOMBRE_ARCHIVO_DD-MM-AAAA.pdf: la fecha debe venir
+# precedida de un guion bajo e inmediatamente seguida de ".pdf" y el fin del
+# nombre. Cualquier variante (sin guion bajo, doble extension .pdf.pdf, texto
+# despues de la fecha, etc.) se ignora - no se lee.
+PATRON = re.compile(r"_(\d{2}-\d{2}-\d{4})\.pdf$", re.IGNORECASE)
 
 
 def escanear():
@@ -85,10 +89,18 @@ def escanear():
                 if restantes > DIAS_ALERTA:
                     continue  # fuera del umbral, no interesa a ninguna de las dos listas
 
-                estado = "VENCIDO" if restantes < 0 else f"{restantes} dias restantes"
+                es_acuse = nombre.upper().startswith(PREFIJO_ACUSE)
+
+                if restantes < 0:
+                    # Un acuse atrasado esta "pendiente" de recibirse, no "vencido"
+                    # como un permiso o licencia.
+                    estado = "PENDIENTE" if es_acuse else "VENCIDO"
+                else:
+                    estado = f"{restantes} dias restantes"
+
                 registro = (nombre, vence, estado, raiz)
 
-                if nombre.upper().startswith(PREFIJO_ACUSE):
+                if es_acuse:
                     acuses.append(registro)
                 else:
                     vencimientos.append(registro)
@@ -107,30 +119,42 @@ def _agrupar_por_carpeta(documentos):
     return dict(sorted(grupos.items()))
 
 
+# Iconos de estado: rojo para lo ya atrasado (VENCIDO o PENDIENTE),
+# ambar para lo que todavia esta dentro del umbral de aviso.
+_ICONO_ATRASADO = "⛔"
+_ICONO_PROXIMO = "⚠️"
+
+
 def _construir_cuerpo(documentos, encabezado):
     """Genera un cuerpo de correo en texto plano, legible y agrupado por carpeta."""
     total = len(documentos)
     grupos = _agrupar_por_carpeta(documentos)
 
-    ANCHO = 70
-    lineas = []
-    lineas.append(encabezado)
-    lineas.append(f"Generado: {datetime.now().strftime('%d-%m-%Y %H:%M')}")
-    lineas.append("=" * ANCHO)
-    lineas.append(f"Total de documentos: {total}")
-    lineas.append("")
+    ANCHO = 60
+    SEP = "━" * ANCHO
+
+    lineas = [
+        SEP,
+        f"  {encabezado}",
+        f"  Generado: {datetime.now().strftime('%d-%m-%Y %H:%M')}"
+        f"      Total: {total} documentos",
+        SEP,
+        "",
+    ]
 
     for carpeta, items in grupos.items():
-        lineas.append("-" * ANCHO)
-        lineas.append(f"CARPETA: {carpeta}")
-        lineas.append("-" * ANCHO)
+        lineas.append(f"📁 {carpeta}")
+        ancho_estado = max(len(estado) for _, _, estado in items)
         for nombre, vence, estado in items:
-            lineas.append(f"  • {nombre}")
-            lineas.append(f"      Vence: {vence.strftime('%d-%m-%Y')}   |   Estado: {estado}")
+            icono = _ICONO_ATRASADO if estado in ("VENCIDO", "PENDIENTE") else _ICONO_PROXIMO
+            lineas.append(f"   {icono} {nombre}")
+            lineas.append(
+                f"        {estado.ljust(ancho_estado)}  (vence {vence.strftime('%d-%m-%Y')})"
+            )
         lineas.append("")
 
-    lineas.append("=" * ANCHO)
-    lineas.append("Correo generado automaticamente por el sistema de alertas de Recicley.")
+    lineas.append(SEP)
+    lineas.append("Correo generado automáticamente por el sistema de alertas de Recicley.")
     return "\n".join(lineas)
 
 

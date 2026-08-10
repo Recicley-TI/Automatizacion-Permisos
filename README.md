@@ -18,25 +18,25 @@ ya venció. También da seguimiento, por separado, a los acuses de recibo relaci
 ## Qué hace
 
 1. Lee `carpetas.txt` y arma la lista de rutas a revisar (73 rutas actualmente, agrupadas por trámite).
-2. Recorre cada ruta —y sus subcarpetas— buscando archivos `.pdf` cuyo nombre termine en una fecha
-   (`DD-MM-AAAA.pdf`).
+2. Recorre cada ruta —y sus subcarpetas— buscando archivos `.pdf` cuyo nombre termine **exactamente** en
+   `_DD-MM-AAAA.pdf` (ver convención abajo).
 3. Calcula cuántos días faltan para el vencimiento de cada uno.
 4. Descarta los que están fuera del umbral (`DIAS_ALERTA`, hoy en 30 días) y clasifica el resto como
-   *"N días restantes"* o *"VENCIDO"*.
+   *"N días restantes"* o, si ya se pasó la fecha, *"VENCIDO"* (permisos/licencias) o *"PENDIENTE"* (acuses).
 5. Separa los resultados en dos grupos según el nombre del archivo:
    - **Vencimientos** — permisos y licencias normales.
    - **Acuses** — archivos cuyo nombre inicia con `ACUSE_`, que se reportan aparte.
 6. Por cada grupo no vacío, agrupa los documentos por carpeta, ordena por fecha (más urgente primero) y arma
-   un correo de texto plano con el detalle.
+   un correo de texto plano, legible, con íconos de estado (ver más abajo).
 7. Envía el correo de vencimientos al destinatario principal (con copias), y —si aplica— el de acuses de
    forma independiente, a sus propios destinatarios.
 
 ## Convención de nombres de archivo
 
-Para que el script pueda leer la fecha, cada documento debe llamarse así:
+Para que el script pueda leer la fecha, cada documento debe llamarse **exactamente** así:
 
 ```
-DESCRIPCION_DOCUMENTO_DD-MM-AAAA.pdf
+NOMBRE_ARCHIVO_DD-MM-AAAA.pdf
 ```
 
 Ejemplos:
@@ -47,9 +47,37 @@ PERMISO_TRANSPORTE_RESIDUOS_15-08-2025.pdf
 ACUSE_PERMISO_TRANSPORTE_15-08-2025.pdf   ← se reporta como acuse, no como vencimiento
 ```
 
-> ⚠️ El patrón vigente (`PATRON = re.compile(r"(\d{2}-\d{2}-\d{4})\.pdf$")`) exige que la fecha esté seguida
-> **exactamente** de `.pdf`. Archivos con doble extensión (`...pdf.pdf`) no se detectan — revisa la
-> documentación (sección 3.3) para el detalle y la recomendación al respecto.
+El patrón es estricto por diseño (`PATRON = re.compile(r"_(\d{2}-\d{2}-\d{4})\.pdf$")`): la fecha debe venir
+precedida de un guion bajo (`_`) e inmediatamente seguida de `.pdf`, sin nada más. Si el nombre no cumple ese
+formato exacto, **el script lo ignora silenciosamente** (no aparece en ningún correo). Casos que se rechazan:
+
+| Nombre | Por qué se rechaza |
+|---|---|
+| `PERMISO28-07-2026.pdf` | Falta el `_` antes de la fecha |
+| `PERMISO_28-07-2026.pdf.pdf` | Doble extensión — no termina en `_DD-MM-AAAA.pdf` |
+| `PERMISO_28-07-2026 copia.pdf` | Hay texto después de la fecha |
+
+## Formato del correo
+
+El cuerpo es texto plano (compatible con cualquier cliente, sin riesgo de filtros de spam por HTML), agrupado
+por carpeta y con íconos de estado para que se lea de un vistazo: ⛔ para lo ya atrasado (`VENCIDO` /
+`PENDIENTE`), ⚠️ para lo que todavía está dentro del umbral de aviso.
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ALERTA DE VENCIMIENTO DE PERMISOS
+  Generado: 10-08-2026 09:00      Total: 3 documentos
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 /volume4/.../1.Recuperadora.../Coahuila
+   ⛔ PERMISO_TRANSPORTE_15-08-2025.pdf
+        VENCIDO            (vence 15-08-2025)
+   ⚠️ LICENCIA_AMBIENTAL_30-11-2026.pdf
+        12 dias restantes  (vence 30-11-2026)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Correo generado automáticamente por el sistema de alertas de Recicley.
+```
 
 ## Configuración
 
@@ -122,7 +150,6 @@ Detalle completo de la configuración del NAS (SMTP, panel de red, tarea program
 ## Pendientes conocidos
 
 - Confirmar la periodicidad definitiva de ejecución (diaria o semanal).
-- Resolver el caso de archivos con doble extensión `.pdf.pdf` que el patrón actual no detecta (ver arriba).
 - Evaluar, a futuro, extraer la fecha de vencimiento del contenido del PDF como validación adicional.
 
 ---
