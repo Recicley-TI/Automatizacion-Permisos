@@ -17,7 +17,7 @@ ya venció. También da seguimiento, por separado, a los acuses de recibo relaci
 
 ## Qué hace
 
-1. Lee `carpetas.txt` y arma la lista de rutas a revisar (73 rutas actualmente, agrupadas por trámite).
+1. Lee `carpetas.txt` y arma la lista de rutas a revisar (98 rutas actualmente, agrupadas por trámite).
 2. Recorre cada ruta —y sus subcarpetas— buscando archivos `.pdf` cuyo nombre termine **exactamente** en
    `_DD-MM-AAAA.pdf` (ver convención abajo).
 3. Calcula cuántos días faltan para el vencimiento de cada uno.

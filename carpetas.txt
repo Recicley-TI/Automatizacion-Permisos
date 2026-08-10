@@ -60,6 +60,46 @@
 4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
 4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
 
+# 5. Reportes Anuales y Semestrales SIREM - Foráneos
+5.Reportes Anuales y Semestrales SIREM/FORANEOS
+
+# 5. Reportes Anuales y Semestrales SIREM - Locales
+5.Reportes Anuales y Semestrales SIREM/LOCALES/BÁSCULA
+5.Reportes Anuales y Semestrales SIREM/LOCALES/CHATARRA-JHONSON RECI-001
+5.Reportes Anuales y Semestrales SIREM/LOCALES/COMPOSTA FRENTE A SEGREGACIÓN
+5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI 003 PLASTICOS
+5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-002 DESTRUCCIONES NESTLÉ
+5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-007 CONTABLES CAF MONDELEZ
+5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-008 MADERA I
+5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN 2 RECI-005
+5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN I RECI-004
+
+# 6. Plan de Manejo - Foráneos
+6.Plan de Manejo/FORANEOS/GUADALAJARA
+6.Plan de Manejo/FORANEOS/GUANAJUATO
+6.Plan de Manejo/FORANEOS/HERREROS
+6.Plan de Manejo/FORANEOS/MONTERREY
+6.Plan de Manejo/FORANEOS/NAVE 26
+6.Plan de Manejo/FORANEOS/NAVE 27
+6.Plan de Manejo/FORANEOS/PINTORES
+6.Plan de Manejo/FORANEOS/PUEBLA-hasta tener liberado impacto ambiental
+6.Plan de Manejo/FORANEOS/XOCHIMILCO
+
+# 6. Plan de Manejo - Locales Permisos 2025 (carpeta completa; incluye sus subcarpetas
+# 1.Bascula, 2.Destrucciones y 3.Madera I.Independencia por recorrido recursivo)
+6.Plan de Manejo/LOCALES PERMISOS 2025
+
+# 6. Plan de Manejo - Locales Permisos 2026 (carpeta completa; incluye sus subcarpetas
+# 1.Acuses 2026, 1.Acuses 2026/Bascula, 2.Bascula, 3.CAF-Contables y 4.Composta Viejita
+# por recorrido recursivo)
+6.Plan de Manejo/LOCALES PERMISOS 2026
+
+# 6. Plan de Manejo - Querétaro y otras razones sociales
+6.Plan de Manejo/QUERETARO NAVE 26
+6.Plan de Manejo/QUERETARO NAVE 27
+6.Plan de Manejo/RAMIR RMO
+6.Plan de Manejo/RMIR RMX
+
 # 18. Cedula de Zonificación
 18.Cedula de Zonificación/1.Xhala 2
 18.Cedula de Zonificación/2.Composta viejita
