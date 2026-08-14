@@ -100,6 +100,40 @@
 6.Plan de Manejo/RAMIR RMO
 6.Plan de Manejo/RMIR RMX
 
+# 7. Impactos Ambientales - Impactos Foráneos
+7.Impactos Ambientales/Impactos Foraneos/GUADALAJARA
+7.Impactos Ambientales/Impactos Foraneos/GUANAJUATO
+7.Impactos Ambientales/Impactos Foraneos/MONTERREY
+7.Impactos Ambientales/Impactos Foraneos/PUEBLA
+7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 26
+7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 27
+7.Impactos Ambientales/Impactos Foraneos/SLP HERREROS
+7.Impactos Ambientales/Impactos Foraneos/SLP PINTORES
+7.Impactos Ambientales/Impactos Foraneos/XHALA 1
+
+# 7. Impactos Ambientales - Impactos Liberados sin Condicionante
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/1.Contables
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/2.Composta viejita
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/3.Destrucciones
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/4.Plasticos
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/5.Segregación I y II
+7.Impactos Ambientales/Impactos Liberados sin Condicionante/6.Madera Independencia
+
+# 7. Impactos Ambientales - Impactos Locales (carpeta completa; incluye sus subcarpetas
+# 1.Bascula, 2.CAF-Contables, 3.Composta Viejita, 4.Destrucciones, 5.Ducto de gas,
+# 6.El dorado y 7.Madera Independencia por recorrido recursivo)
+7.Impactos Ambientales/Impactos Locales
+
+# 7. Impactos Ambientales - Modificación Impactos Ambientales (carpeta completa; incluye
+# sus subcarpetas 1.Composta Viejita y 2.Destruccion por recorrido recursivo)
+7.Impactos Ambientales/Modificación Impactos Ambientales
+
+# 7. Impactos Ambientales - Prorrogas de Impactos Ambientales (carpeta completa; incluye
+# sus subcarpetas 1.Madera Independencia, 2.Johnson, 3.Segregación 1, 4.Segregacion 2,
+# 5.Destrucciones, 6.Chatarra, 7.Composta Viejita, 8.Ducto Gas, 9.Plásticos, 10.CAF y
+# 11.Segregacion 3 por recorrido recursivo)
+7.Impactos Ambientales/Prorrogas de Impactos Ambientales
+
 # 18. Cedula de Zonificación
 18.Cedula de Zonificación/1.Xhala 2
 18.Cedula de Zonificación/2.Composta viejita
