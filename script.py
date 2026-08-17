@@ -41,13 +41,18 @@ DIAS_ALERTA = 30
 GMAIL_USER = "ti@recicleymx.com"
 DESTINATARIO_PRINCIPAL = "legal.permisos@recicleymx.com"
 CC = [
-    "leonardogrl18@gmail.com"
+    "leonardogrl18@gmail.com",
+    "aux.contraloria@recicleymx.com",
+    "contraloriainterna1@recicleymx.com"
 ]
 
-# Destinatarios del correo de acuses (por defecto, los mismos que el principal)
+#
+#  Destinatarios del correo de acuses (por defecto, los mismos que el principal)
 DESTINATARIO_ACUSES = "legal.permisos@recicleymx.com"
 CC_ACUSES = [
-    "leonardogrl18@gmail.com"
+    "leonardogrl18@gmail.com",
+    "aux.contraloria@recicleymx.com",
+    "contraloriainterna1@recicleymx.com"
 ]
 
 # CONTRASEÑA UTILIZADA EN BASH (CONTRASEÑA DE APLICACIÓN DE GMAIL) PARA ENVIAR CORREOS DESDE EL SCRIPT
@@ -119,6 +124,33 @@ def _agrupar_por_carpeta(documentos):
     return dict(sorted(grupos.items()))
 
 
+def _clave_orden_categoria(categoria):
+    """Extrae el numero inicial de una carpeta (p.ej. '18' de
+    '18.Cedula de Zonificación') para poder ordenar categorias en orden
+    numerico y no alfabetico (donde '18' quedaria antes que '2')."""
+    m = re.match(r"(\d+)", categoria)
+    return int(m.group(1)) if m else float("inf")
+
+
+def _categoria_de(raiz):
+    """Extrae el nombre de la carpeta numerada de primer nivel (p.ej.
+    '3.Licencias de Funcionamiento') a partir de la ruta absoluta de un
+    documento, para poder agrupar y enviar un correo por tramite."""
+    resto = raiz[len(_BASE_CALIDAD):].lstrip("/")
+    return resto.split("/")[0]
+
+
+def _agrupar_por_categoria(documentos):
+    """Agrupa documentos (vencimientos o acuses) por su carpeta numerada de
+    primer nivel (1. Permisos de Recolección, 2. Permisos Planta de
+    Separación, etc.), en orden numerico."""
+    grupos = defaultdict(list)
+    for registro in documentos:
+        _, _, _, raiz = registro
+        grupos[_categoria_de(raiz)].append(registro)
+    return dict(sorted(grupos.items(), key=lambda kv: _clave_orden_categoria(kv[0])))
+
+
 # Iconos de estado: rojo para lo ya atrasado (VENCIDO o PENDIENTE),
 # ambar para lo que todavia esta dentro del umbral de aviso.
 _ICONO_ATRASADO = "⛔"
@@ -172,18 +204,18 @@ def _enviar(destinatario_principal, cc, asunto, cuerpo):
         servidor.sendmail(GMAIL_USER, destinatarios_totales, msg.as_string())
 
 
-def enviar_correo_vencimientos(documentos):
-    asunto = f"Alerta: {len(documentos)} permiso(s) por vencer o vencidos"
-    cuerpo = _construir_cuerpo(documentos, "ALERTA DE VENCIMIENTO DE PERMISOS")
+def enviar_correo_vencimientos(categoria, documentos):
+    asunto = f"Alerta: {len(documentos)} permiso(s) por vencer o vencidos — {categoria}"
+    cuerpo = _construir_cuerpo(documentos, f"ALERTA DE VENCIMIENTO DE PERMISOS — {categoria}")
     _enviar(DESTINATARIO_PRINCIPAL, CC, asunto, cuerpo)
-    print("Correo de vencimientos enviado correctamente.")
+    print(f"Correo de vencimientos enviado correctamente ({categoria}).")
 
 
-def enviar_correo_acuses(documentos):
-    asunto = f"Acuses en seguimiento: {len(documentos)} documento(s)"
-    cuerpo = _construir_cuerpo(documentos, "LISTADO DE ACUSES EN SEGUIMIENTO")
+def enviar_correo_acuses(categoria, documentos):
+    asunto = f"Acuses en seguimiento: {len(documentos)} documento(s) — {categoria}"
+    cuerpo = _construir_cuerpo(documentos, f"LISTADO DE ACUSES EN SEGUIMIENTO — {categoria}")
     _enviar(DESTINATARIO_ACUSES, CC_ACUSES, asunto, cuerpo)
-    print("Correo de acuses enviado correctamente.")
+    print(f"Correo de acuses enviado correctamente ({categoria}).")
 
 
 if __name__ == "__main__":
@@ -196,11 +228,13 @@ if __name__ == "__main__":
     vencimientos, acuses = escanear()
 
     if vencimientos:
-        enviar_correo_vencimientos(vencimientos)
+        for categoria, documentos in _agrupar_por_categoria(vencimientos).items():
+            enviar_correo_vencimientos(categoria, documentos)
     else:
         print("No hay permisos proximos a vencer.")
 
     if acuses:
-        enviar_correo_acuses(acuses)
+        for categoria, documentos in _agrupar_por_categoria(acuses).items():
+            enviar_correo_acuses(categoria, documentos)
     else:
         print("No hay acuses proximos a vencer.")

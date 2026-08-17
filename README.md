@@ -26,10 +26,16 @@ ya venció. También da seguimiento, por separado, a los acuses de recibo relaci
 5. Separa los resultados en dos grupos según el nombre del archivo:
    - **Vencimientos** — permisos y licencias normales.
    - **Acuses** — archivos cuyo nombre inicia con `ACUSE_`, que se reportan aparte.
-6. Por cada grupo no vacío, agrupa los documentos por carpeta, ordena por fecha (más urgente primero) y arma
-   un correo de texto plano, legible, con íconos de estado (ver más abajo).
-7. Envía el correo de vencimientos al destinatario principal (con copias), y —si aplica— el de acuses de
-   forma independiente, a sus propios destinatarios.
+6. Dentro de cada grupo, subagrupa los documentos por **carpeta numerada de primer nivel** (el trámite:
+   `1.Permisos de Recolección y Traslado`, `2.Permisos Planta de Separación (Segregacion)`,
+   `3.Licencias de Funcionamiento`, etc. — ver `carpetas.txt`), en orden numérico.
+7. Por cada carpeta numerada que tenga al menos un documento, agrupa esos documentos por subcarpeta, ordena
+   por fecha (más urgente primero) y arma **un correo de texto plano independiente**, legible, con íconos de
+   estado (ver más abajo) e identificando el trámite en el asunto y encabezado.
+8. Envía un correo de vencimientos por cada trámite con alertas al destinatario principal (con copias), y —si
+   aplica— uno de acuses por cada trámite con acuses pendientes, de forma independiente, a sus propios
+   destinatarios. Es decir: si hay alertas en 3 trámites distintos, se envían 3 correos de vencimientos (uno
+   por trámite), no uno solo con todo mezclado.
 
 ## Convención de nombres de archivo
 
@@ -59,14 +65,17 @@ formato exacto, **el script lo ignora silenciosamente** (no aparece en ningún c
 
 ## Formato del correo
 
-El cuerpo es texto plano (compatible con cualquier cliente, sin riesgo de filtros de spam por HTML), agrupado
-por carpeta y con íconos de estado para que se lea de un vistazo: ⛔ para lo ya atrasado (`VENCIDO` /
-`PENDIENTE`), ⚠️ para lo que todavía está dentro del umbral de aviso.
+Cada correo es de un solo trámite (una carpeta numerada). El cuerpo es texto plano (compatible con cualquier
+cliente, sin riesgo de filtros de spam por HTML), agrupado por subcarpeta y con íconos de estado para que se
+lea de un vistazo: ⛔ para lo ya atrasado (`VENCIDO` / `PENDIENTE`), ⚠️ para lo que todavía está dentro del
+umbral de aviso. El asunto y el encabezado identifican el trámite, por ejemplo:
+
+`Alerta: 2 permiso(s) por vencer o vencidos — 1.Permisos de Recolección y Traslado`
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ALERTA DE VENCIMIENTO DE PERMISOS
-  Generado: 10-08-2026 09:00      Total: 3 documentos
+  ALERTA DE VENCIMIENTO DE PERMISOS — 1.Permisos de Recolección y Traslado
+  Generado: 10-08-2026 09:00      Total: 2 documentos
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📁 /volume4/.../1.Recuperadora.../Coahuila
@@ -78,6 +87,9 @@ por carpeta y con íconos de estado para que se lea de un vistazo: ⛔ para lo y
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Correo generado automáticamente por el sistema de alertas de Recicley.
 ```
+
+Si el mismo día hay alertas en otro trámite (p.ej. `3.Licencias de Funcionamiento`), llega un **segundo
+correo independiente**, con su propio asunto y encabezado.
 
 ## Configuración
 

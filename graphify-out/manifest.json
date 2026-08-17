@@ -1,0 +1,27 @@
+{
+  "script.py": {
+    "mtime": 1786933855.9505138,
+    "ast_hash": "72582260997389a13e769097704302cf",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1786933915.8186383,
+    "ast_hash": "2cc10bc26bfb1001c3df7a03b938d61d",
+    "semantic_hash": ""
+  },
+  "carpetas.txt": {
+    "mtime": 1786739871.6836424,
+    "ast_hash": "1d0381ad7c0586f28454fe1f2141882b",
+    "semantic_hash": ""
+  },
+  "Documentacion_NAS_Alertas_Vencimiento.pdf": {
+    "mtime": 1786393928.5619886,
+    "ast_hash": "45423ba08bf452599182d8e34b669449",
+    "semantic_hash": ""
+  },
+  "Documentacion_NAS_Alertas_Vencimiento_backup_2026-08-10_41rutas.pdf": {
+    "mtime": 1786385003.104035,
+    "ast_hash": "31063e66c19d9d40448130b65d492089",
+    "semantic_hash": ""
+  }
+}

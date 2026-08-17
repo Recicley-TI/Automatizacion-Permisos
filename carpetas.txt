@@ -180,3 +180,164 @@
 
 # 24. Autorizacion para deposito de RSU en sitio SLP
 24.Autorizacion para depósito de RSU en sitio SLP
+
+# 8. Factibilidad de Giro
+8.Factibilidad de Giro/Guadalajara
+8.Factibilidad de Giro/Querétaro/NAVE 26
+8.Factibilidad de Giro/Querétaro/NAVE 27
+
+# 9. Generador Bodegas - RMO
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Generador de Residuos Peligrosos RMO
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Bascula
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.CAF-Contables
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Destrucciones
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Plásticos
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./6.Composta Viejita
+9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./7.Puebla
+
+# 9. Generador Bodegas - Recicley MX
+9.Generador Bodegas/2.Recicley MX S.A. de C.V./1.Madera Independencia
+9.Generador Bodegas/2.Recicley MX S.A. de C.V./2.Johnson
+9.Generador Bodegas/2.Recicley MX S.A. de C.V./3.Segregacion Ii
+9.Generador Bodegas/2.Recicley MX S.A. de C.V./4.Segregacion I
+9.Generador Bodegas/2.Recicley MX S.A. de C.V./5.Composta
+
+# 9. Generador Bodegas - Foráneos
+9.Generador Bodegas/3.Foraneos/Guadalajara
+9.Generador Bodegas/3.Foraneos/Guanajuato
+9.Generador Bodegas/3.Foraneos/Herreros
+9.Generador Bodegas/3.Foraneos/Monterrey
+9.Generador Bodegas/3.Foraneos/Nave 26
+9.Generador Bodegas/3.Foraneos/Nave 27
+9.Generador Bodegas/3.Foraneos/Pintores
+9.Generador Bodegas/3.Foraneos/Puebla
+
+# 10. LAU CDMX
+10.LAU CDMX
+
+# 11. Ramir 2026
+11.Ramir 2026/Recicley MX SA de CV
+11.Ramir 2026/Recuperadora de Materiales Ocampo de Toluca SA de CV
+
+# 12. Permisos de Acopio - Foráneos
+12.Permisos de Acopio/FORANEOS/GUADALAJARA
+12.Permisos de Acopio/FORANEOS/GUADALAJARA CARTA FICTA Y QUEJA ADMINISTRATIVA 20-01-2026
+12.Permisos de Acopio/FORANEOS/GUANAJUATO
+12.Permisos de Acopio/FORANEOS/HERREROS
+12.Permisos de Acopio/FORANEOS/MONTERREY
+12.Permisos de Acopio/FORANEOS/NAVE 26
+12.Permisos de Acopio/FORANEOS/NAVE 27
+12.Permisos de Acopio/FORANEOS/PINTORES
+12.Permisos de Acopio/FORANEOS/PUEBLA
+
+# 12. Permisos de Acopio - Recicley MX
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./1.Queretaro
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./2.Madera Independencia
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./3.Segregación I
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./4.Segregación II
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./5.Chatarra
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./6.RAMIR RMX
+12.Permisos de Acopio/RecicleyMX S.A. de C.V./7.RECI-009 DUCTO DE GAS
+
+# 12. Permisos de Acopio - RMO
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Bascula
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Caf-Contables
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.Destrucciones
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Plásticos
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Ramir y plan de manejo
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/1.Guadalajara
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/2.Guanajuato
+12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/3.Monterrey
+
+# 14. Dictamen de Factibilidad de agua y drenaje
+14.Dictamen de Factibilidad de agua y drenaje/1.Composta 2
+14.Dictamen de Factibilidad de agua y drenaje/2.Almacen Johnson
+14.Dictamen de Factibilidad de agua y drenaje/3.Segregación I y II
+14.Dictamen de Factibilidad de agua y drenaje/4.Composta Viejita
+14.Dictamen de Factibilidad de agua y drenaje/5.Destrucciones
+14.Dictamen de Factibilidad de agua y drenaje/6.CAF-Contables
+14.Dictamen de Factibilidad de agua y drenaje/7.Plásticos
+14.Dictamen de Factibilidad de agua y drenaje/8.Taller-Reci 016
+14.Dictamen de Factibilidad de agua y drenaje/9.Xhala
+
+# 15. Alineamiento y Numero Oficial
+15.Alineamiento y Numero Oficial/1.Bascula
+15.Alineamiento y Numero Oficial/2.Reci 16-Taller
+15.Alineamiento y Numero Oficial/3.Caf-Contables
+15.Alineamiento y Numero Oficial/4.Composta Viejita
+15.Alineamiento y Numero Oficial/5.Destrucciones
+15.Alineamiento y Numero Oficial/6.Estacionamiento
+15.Alineamiento y Numero Oficial/7.Plásticos
+15.Alineamiento y Numero Oficial/8.Segregacion I y II
+15.Alineamiento y Numero Oficial/9.Chatarra
+15.Alineamiento y Numero Oficial/10.Segracion III
+15.Alineamiento y Numero Oficial/11.Johnson
+
+# 15. Alineamiento y Numero Oficial - Foráneos
+15.Alineamiento y Numero Oficial/Foraneos/1.Guanajuato
+15.Alineamiento y Numero Oficial/Foraneos/2.Xhala 2
+
+# 16. Condicionantes Liberadas 2025
+16.Condicionantes Liberadas 2025/1.Johnson
+16.Condicionantes Liberadas 2025/2.CAF-Contables
+16.Condicionantes Liberadas 2025/3.Segregación I
+16.Condicionantes Liberadas 2025/4.Segregación II
+16.Condicionantes Liberadas 2025/5.Plásticos
+16.Condicionantes Liberadas 2025/6.Destrucciones
+16.Condicionantes Liberadas 2025/7.Madera I
+16.Condicionantes Liberadas 2025/8.Composta
+
+# 17. Usos de Suelo
+17.Usos de Suelo/1.Bascula
+17.Usos de Suelo/2.Reci 16-Taller
+17.Usos de Suelo/4.Composta viejita
+17.Usos de Suelo/5.El dorado
+17.Usos de Suelo/6.Destrucciones
+17.Usos de Suelo/7.Johnson
+17.Usos de Suelo/8.Segregacion 1 y 2
+17.Usos de Suelo/9.Segregación 3
+17.Usos de Suelo/10.Chatarra Triangulo
+
+# 17. Usos de Suelo - Foráneos
+17.Usos de Suelo/FORANEOS/1.Guadalajara
+17.Usos de Suelo/FORANEOS/2.Guanajuato
+17.Usos de Suelo/FORANEOS/3.Xhala 2
+17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 26
+17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 27
+17.Usos de Suelo/FORANEOS/5.San Luis Potosi/HERREROS
+17.Usos de Suelo/FORANEOS/5.San Luis Potosi/PINTORES
+17.Usos de Suelo/FORANEOS/6.Monterrey
+17.Usos de Suelo/FORANEOS/7.Puebla
+
+# 13. Proteccion Civil
+13.Proteccion Civil/1.Reci 16-Taller
+13.Proteccion Civil/2.Bascula
+13.Proteccion Civil/3.CAF-Contables
+13.Proteccion Civil/4.Composta viejita
+13.Proteccion Civil/5.Composta 2
+13.Proteccion Civil/6.Xhala
+13.Proteccion Civil/7.Segregación I y II
+13.Proteccion Civil/8.Cruz Blanca
+13.Proteccion Civil/9.Destrucciones
+13.Proteccion Civil/10.Ducto de gas
+13.Proteccion Civil/11.El dorado
+13.Proteccion Civil/12.Frente a Johnson
+13.Proteccion Civil/13.Madera Independencia
+13.Proteccion Civil/14.Madera Matamoros
+13.Proteccion Civil/15.Madera Hidalgo
+13.Proteccion Civil/16.Johnson
+13.Proteccion Civil/17.Patio de Maniobras
+13.Proteccion Civil/18.Segregacion III
+13.Proteccion Civil/19.Plásticos
+13.Proteccion Civil/20.Triangulo Chatarra
+
+# 13. Proteccion Civil - Almacén Foráneos
+13.Proteccion Civil/PC ALMACEN FORANEOS/GUADALAJARA
+13.Proteccion Civil/PC ALMACEN FORANEOS/GUANAJUATO
+13.Proteccion Civil/PC ALMACEN FORANEOS/HERREROS
+13.Proteccion Civil/PC ALMACEN FORANEOS/MONTERREY
+13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 26
+13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 27
+13.Proteccion Civil/PC ALMACEN FORANEOS/PINTORES
+13.Proteccion Civil/PC ALMACEN FORANEOS/PUEBLA
+13.Proteccion Civil/PC ALMACEN FORANEOS/VENCIDOS
