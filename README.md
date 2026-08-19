@@ -17,7 +17,7 @@ ya venció. También da seguimiento, por separado, a los acuses de recibo relaci
 
 ## Qué hace
 
-1. Lee `carpetas.txt` y arma la lista de rutas a revisar (98 rutas actualmente, agrupadas por trámite).
+1. Lee `carpetas.txt` y arma la lista de rutas a revisar (249 rutas actualmente, agrupadas por área y trámite).
 2. Recorre cada ruta —y sus subcarpetas— buscando archivos `.pdf` cuyo nombre termine **exactamente** en
    `_DD-MM-AAAA.pdf` (ver convención abajo).
 3. Calcula cuántos días faltan para el vencimiento de cada uno.
@@ -95,18 +95,25 @@ correo independiente**, con su propio asunto y encabezado.
 
 ### `carpetas.txt` — lista blanca de carpetas
 
-Una ruta por línea, **relativa** a la raíz común (`_BASE_CALIDAD` en `script.py`, hoy
-`/volume4/Contraloría/1.Calidad-Gestoría`). Las líneas vacías y las que empiezan con `#` se ignoran:
+Una ruta por línea, **relativa** a la raíz común (`_BASE_CONTRALORIA` en `script.py`, hoy
+`/volume4/Contraloría`). El primer segmento de cada ruta es el **área** dentro de Contraloría
+(`1.Calidad-Gestoría`, `6.Ventas`, `3.Comercial`, etc.) y el segundo es el **trámite** dentro de esa área —
+es el trámite el que se usa para agrupar y nombrar cada correo (igual que antes). Las líneas vacías y las
+que empiezan con `#` se ignoran:
 
 ```
 # 1. Permisos de Recolección y Traslado - Recicley MX
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Estado de México
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Queretaro
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Estado de México
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Queretaro
 ...
+
+# 6. Ventas - Convenios Clientes
+6.Ventas/1.Convenios Clientes/2.Ecofibras
 ```
 
-Para monitorear una carpeta nueva: **agrega una línea a `carpetas.txt`**. No hace falta tocar `script.py` ni
-volver a desplegarlo — el script la lee cada vez que arranca.
+Para monitorear una carpeta nueva: **agrega una línea a `carpetas.txt`**, con el área correspondiente como
+primer segmento. No hace falta tocar `script.py` ni volver a desplegarlo — el script la lee cada vez que
+arranca. Esto aplica para cualquier área dentro de Contraloría, no solo `1.Calidad-Gestoría`.
 
 ### Variables de entorno
 

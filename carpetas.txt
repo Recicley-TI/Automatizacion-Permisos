@@ -1,7 +1,12 @@
 # Lista blanca de carpetas monitoreadas por script.py
 # ---------------------------------------------------------------
-# Una ruta por linea, RELATIVA a la raiz de Calidad-Gestoria:
-#   /volume4/Contraloría/1.Calidad-Gestoría  (ver _BASE_CALIDAD en script.py)
+# Una ruta por linea, RELATIVA a la raiz de Contraloria:
+#   /volume4/Contraloría  (ver _BASE_CONTRALORIA en script.py)
+#
+# El primer segmento de cada ruta es el area dentro de Contraloría
+# (1.Calidad-Gestoría, 6.Ventas, 3.Comercial, etc.). El script agrupa
+# y nombra cada correo usando el segundo segmento (el tramite dentro
+# de esa area), igual que antes.
 #
 # Lineas vacias y las que inician con # se ignoran.
 # Para agregar o quitar una carpeta monitoreada, edita este archivo -
@@ -9,335 +14,347 @@
 # ---------------------------------------------------------------
 
 # 1. Permisos de Recolección y Traslado - Recicley MX
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Estado de México
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Queretaro
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/RAMIR RMX
-1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Residuos Peligrosos
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Estado de México
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Queretaro
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/RAMIR RMX
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/2.Recicley MX S.A. de .C.V/Residuos Peligrosos
 
 # 1. Permisos de Recolección y Traslado - RMO
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Coahuila
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guanajuato
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Herreros
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Nave 27
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Puebla
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Ramir RMO
-1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Residuos Peligrosos
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Coahuila
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guanajuato
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Herreros
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Nave 27
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Puebla
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Ramir RMO
+1.Calidad-Gestoría/1.Permisos de Recolección y Traslado/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Residuos Peligrosos
 
 # 2. Permisos Planta de Separación (Segregación) - Recicley MX
-2.Permisos Planta de Separación (Segregacion)/Recicley MX S.A. de C.V.
+1.Calidad-Gestoría/2.Permisos Planta de Separación (Segregacion)/Recicley MX S.A. de C.V.
 
 # 3. Licencias de Funcionamiento - Foráneos
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Guadalajara
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Puebla
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/San Luis Potosí
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Xhala
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Guadalajara
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Puebla
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/San Luis Potosí
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Xhala
 
 # 3. Licencias de Funcionamiento - Toluca
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/1.Bascula
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/2.CAF-Contables
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/3.Composta Viejita
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/4.Destrucciones
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/5.Ducto de gas
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/6.El dorado
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/7.Madera Hidalgo
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/8.Madera Independencia
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/9.Segregacion I
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/10.Madera Matamoros
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/11.Segregación II
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/12.Plásticos
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/13.Triangulo Chatarra
-3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/14.Segregacion III
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/1.Bascula
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/2.CAF-Contables
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/3.Composta Viejita
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/4.Destrucciones
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/5.Ducto de gas
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/6.El dorado
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/7.Madera Hidalgo
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/8.Madera Independencia
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/9.Segregacion I
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/10.Madera Matamoros
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/11.Segregación II
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/12.Plásticos
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/13.Triangulo Chatarra
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/14.Segregacion III
 
 # 4. Permisos de Aprovechamiento - RMO
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/1.Bascula
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/2.CAF-Contables
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/3.Destrucciones
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/4.Plásticos
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/5. Composta
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
-4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/1.Bascula
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/2.CAF-Contables
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/3.Destrucciones
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/4.Plásticos
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/5. Composta
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Guadalajara
+1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Monterrey
 
 # 5. Reportes Anuales y Semestrales SIREM - Foráneos
-5.Reportes Anuales y Semestrales SIREM/FORANEOS
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/FORANEOS
 
 # 5. Reportes Anuales y Semestrales SIREM - Locales
-5.Reportes Anuales y Semestrales SIREM/LOCALES/BÁSCULA
-5.Reportes Anuales y Semestrales SIREM/LOCALES/CHATARRA-JHONSON RECI-001
-5.Reportes Anuales y Semestrales SIREM/LOCALES/COMPOSTA FRENTE A SEGREGACIÓN
-5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI 003 PLASTICOS
-5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-002 DESTRUCCIONES NESTLÉ
-5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-007 CONTABLES CAF MONDELEZ
-5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-008 MADERA I
-5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN 2 RECI-005
-5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN I RECI-004
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/BÁSCULA
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/CHATARRA-JHONSON RECI-001
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/COMPOSTA FRENTE A SEGREGACIÓN
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI 003 PLASTICOS
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-002 DESTRUCCIONES NESTLÉ
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-007 CONTABLES CAF MONDELEZ
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/RECI-008 MADERA I
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN 2 RECI-005
+1.Calidad-Gestoría/5.Reportes Anuales y Semestrales SIREM/LOCALES/SEGREGACIÓN I RECI-004
 
 # 6. Plan de Manejo - Foráneos
-6.Plan de Manejo/FORANEOS/GUADALAJARA
-6.Plan de Manejo/FORANEOS/GUANAJUATO
-6.Plan de Manejo/FORANEOS/HERREROS
-6.Plan de Manejo/FORANEOS/MONTERREY
-6.Plan de Manejo/FORANEOS/NAVE 26
-6.Plan de Manejo/FORANEOS/NAVE 27
-6.Plan de Manejo/FORANEOS/PINTORES
-6.Plan de Manejo/FORANEOS/PUEBLA-hasta tener liberado impacto ambiental
-6.Plan de Manejo/FORANEOS/XOCHIMILCO
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/GUADALAJARA
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/GUANAJUATO
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/HERREROS
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/MONTERREY
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/NAVE 26
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/NAVE 27
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PINTORES
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PUEBLA-hasta tener liberado impacto ambiental
+1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/XOCHIMILCO
 
 # 6. Plan de Manejo - Locales Permisos 2025 (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.Destrucciones y 3.Madera I.Independencia por recorrido recursivo)
-6.Plan de Manejo/LOCALES PERMISOS 2025
+1.Calidad-Gestoría/6.Plan de Manejo/LOCALES PERMISOS 2025
 
 # 6. Plan de Manejo - Locales Permisos 2026 (carpeta completa; incluye sus subcarpetas
 # 1.Acuses 2026, 1.Acuses 2026/Bascula, 2.Bascula, 3.CAF-Contables y 4.Composta Viejita
 # por recorrido recursivo)
-6.Plan de Manejo/LOCALES PERMISOS 2026
+1.Calidad-Gestoría/6.Plan de Manejo/LOCALES PERMISOS 2026
 
 # 6. Plan de Manejo - Querétaro y otras razones sociales
-6.Plan de Manejo/QUERETARO NAVE 26
-6.Plan de Manejo/QUERETARO NAVE 27
-6.Plan de Manejo/RAMIR RMO
-6.Plan de Manejo/RMIR RMX
+1.Calidad-Gestoría/6.Plan de Manejo/QUERETARO NAVE 26
+1.Calidad-Gestoría/6.Plan de Manejo/QUERETARO NAVE 27
+1.Calidad-Gestoría/6.Plan de Manejo/RAMIR RMO
+1.Calidad-Gestoría/6.Plan de Manejo/RMIR RMX
 
 # 7. Impactos Ambientales - Impactos Foráneos
-7.Impactos Ambientales/Impactos Foraneos/GUADALAJARA
-7.Impactos Ambientales/Impactos Foraneos/GUANAJUATO
-7.Impactos Ambientales/Impactos Foraneos/MONTERREY
-7.Impactos Ambientales/Impactos Foraneos/PUEBLA
-7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 26
-7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 27
-7.Impactos Ambientales/Impactos Foraneos/SLP HERREROS
-7.Impactos Ambientales/Impactos Foraneos/SLP PINTORES
-7.Impactos Ambientales/Impactos Foraneos/XHALA 1
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/GUADALAJARA
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/GUANAJUATO
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/MONTERREY
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/PUEBLA
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 26
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/QUERETARO NAVE 27
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/SLP HERREROS
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/SLP PINTORES
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/XHALA 1
 
 # 7. Impactos Ambientales - Impactos Liberados sin Condicionante
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/1.Contables
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/2.Composta viejita
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/3.Destrucciones
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/4.Plasticos
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/5.Segregación I y II
-7.Impactos Ambientales/Impactos Liberados sin Condicionante/6.Madera Independencia
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/1.Contables
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/2.Composta viejita
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/3.Destrucciones
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/4.Plasticos
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/5.Segregación I y II
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/6.Madera Independencia
 
 # 7. Impactos Ambientales - Impactos Locales (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.CAF-Contables, 3.Composta Viejita, 4.Destrucciones, 5.Ducto de gas,
 # 6.El dorado y 7.Madera Independencia por recorrido recursivo)
-7.Impactos Ambientales/Impactos Locales
+1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Locales
 
 # 7. Impactos Ambientales - Modificación Impactos Ambientales (carpeta completa; incluye
 # sus subcarpetas 1.Composta Viejita y 2.Destruccion por recorrido recursivo)
-7.Impactos Ambientales/Modificación Impactos Ambientales
+1.Calidad-Gestoría/7.Impactos Ambientales/Modificación Impactos Ambientales
 
 # 7. Impactos Ambientales - Prorrogas de Impactos Ambientales (carpeta completa; incluye
 # sus subcarpetas 1.Madera Independencia, 2.Johnson, 3.Segregación 1, 4.Segregacion 2,
 # 5.Destrucciones, 6.Chatarra, 7.Composta Viejita, 8.Ducto Gas, 9.Plásticos, 10.CAF y
 # 11.Segregacion 3 por recorrido recursivo)
-7.Impactos Ambientales/Prorrogas de Impactos Ambientales
+1.Calidad-Gestoría/7.Impactos Ambientales/Prorrogas de Impactos Ambientales
 
 # 18. Cedula de Zonificación
-18.Cedula de Zonificación/1.Xhala 2
-18.Cedula de Zonificación/2.Composta viejita
-18.Cedula de Zonificación/3.Composta 2
-18.Cedula de Zonificación/4.Patio de maniobras
-18.Cedula de Zonificación/5.Reci 16-Taller
-18.Cedula de Zonificación/6.Segregacion III
-18.Cedula de Zonificación/7.Frente a Johnson
-18.Cedula de Zonificación/8.Madera Matamoros
-18.Cedula de Zonificación/9.Ducto de gas
-18.Cedula de Zonificación/10.El dorado
-18.Cedula de Zonificación/11.Almacen Johnson
-18.Cedula de Zonificación/12.Reci 012
-18.Cedula de Zonificación/13.Chatarra
-18.Cedula de Zonificación/14.Plásticos
-18.Cedula de Zonificación/15.Cruz Blanca
-18.Cedula de Zonificación/16.Triangulo Chatarra
-18.Cedula de Zonificación/17.Segregacion I y II
-18.Cedula de Zonificación/18.Xhala 1
+1.Calidad-Gestoría/18.Cedula de Zonificación/1.Xhala 2
+1.Calidad-Gestoría/18.Cedula de Zonificación/2.Composta viejita
+1.Calidad-Gestoría/18.Cedula de Zonificación/3.Composta 2
+1.Calidad-Gestoría/18.Cedula de Zonificación/4.Patio de maniobras
+1.Calidad-Gestoría/18.Cedula de Zonificación/5.Reci 16-Taller
+1.Calidad-Gestoría/18.Cedula de Zonificación/6.Segregacion III
+1.Calidad-Gestoría/18.Cedula de Zonificación/7.Frente a Johnson
+1.Calidad-Gestoría/18.Cedula de Zonificación/8.Madera Matamoros
+1.Calidad-Gestoría/18.Cedula de Zonificación/9.Ducto de gas
+1.Calidad-Gestoría/18.Cedula de Zonificación/10.El dorado
+1.Calidad-Gestoría/18.Cedula de Zonificación/11.Almacen Johnson
+1.Calidad-Gestoría/18.Cedula de Zonificación/12.Reci 012
+1.Calidad-Gestoría/18.Cedula de Zonificación/13.Chatarra
+1.Calidad-Gestoría/18.Cedula de Zonificación/14.Plásticos
+1.Calidad-Gestoría/18.Cedula de Zonificación/15.Cruz Blanca
+1.Calidad-Gestoría/18.Cedula de Zonificación/16.Triangulo Chatarra
+1.Calidad-Gestoría/18.Cedula de Zonificación/17.Segregacion I y II
+1.Calidad-Gestoría/18.Cedula de Zonificación/18.Xhala 1
 
 # 19. Movilidad Vial GDL y SLP
-19.Movilidad Vial GDL y SLP
+1.Calidad-Gestoría/19.Movilidad Vial GDL y SLP
 
 # 20. Factibilidad Vial
-20.Factibilidad Vial/1.San Luis Potosí
-20.Factibilidad Vial/2.Guadalajara
+1.Calidad-Gestoría/20.Factibilidad Vial/1.San Luis Potosí
+1.Calidad-Gestoría/20.Factibilidad Vial/2.Guadalajara
 
 # 21. NISS - Recibo Pago de agua y Saneamiento
-21.NISS-Recibo Pago de agua y Saneamiento/1.Bascula
-21.NISS-Recibo Pago de agua y Saneamiento/2.Reci 16-Taller
-21.NISS-Recibo Pago de agua y Saneamiento/3.CAF-Contables
-21.NISS-Recibo Pago de agua y Saneamiento/4.Destrucciones
-21.NISS-Recibo Pago de agua y Saneamiento/5.Estacionamiento
-21.NISS-Recibo Pago de agua y Saneamiento/6.Johnson
-21.NISS-Recibo Pago de agua y Saneamiento/7.Plasticos
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/1.Bascula
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/2.Reci 16-Taller
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/3.CAF-Contables
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/4.Destrucciones
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/5.Estacionamiento
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/6.Johnson
+1.Calidad-Gestoría/21.NISS-Recibo Pago de agua y Saneamiento/7.Plasticos
 
 # 22. Poliza vs Daños Vigente al 30052027
-22.Poliza vs Daños Vigente al 30052027
+1.Calidad-Gestoría/22.Poliza vs Daños Vigente al 30052027
 
 # 23. Factibilidad de agua y drenaje
-23.Factibilidad de agua y drenaje/1.Reci 16-Taller
-23.Factibilidad de agua y drenaje/2.CAF-Contables
-23.Factibilidad de agua y drenaje/3.Composta Viejita
+1.Calidad-Gestoría/23.Factibilidad de agua y drenaje/1.Reci 16-Taller
+1.Calidad-Gestoría/23.Factibilidad de agua y drenaje/2.CAF-Contables
+1.Calidad-Gestoría/23.Factibilidad de agua y drenaje/3.Composta Viejita
 
 # 24. Autorizacion para deposito de RSU en sitio SLP
-24.Autorizacion para depósito de RSU en sitio SLP
+1.Calidad-Gestoría/24.Autorizacion para depósito de RSU en sitio SLP
 
 # 8. Factibilidad de Giro
-8.Factibilidad de Giro/Guadalajara
-8.Factibilidad de Giro/Querétaro/NAVE 26
-8.Factibilidad de Giro/Querétaro/NAVE 27
+1.Calidad-Gestoría/8.Factibilidad de Giro/Guadalajara
+1.Calidad-Gestoría/8.Factibilidad de Giro/Querétaro/NAVE 26
+1.Calidad-Gestoría/8.Factibilidad de Giro/Querétaro/NAVE 27
 
 # 9. Generador Bodegas - RMO
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Generador de Residuos Peligrosos RMO
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Bascula
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.CAF-Contables
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Destrucciones
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Plásticos
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./6.Composta Viejita
-9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./7.Puebla
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Generador de Residuos Peligrosos RMO
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Bascula
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.CAF-Contables
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Destrucciones
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Plásticos
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./6.Composta Viejita
+1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./7.Puebla
 
 # 9. Generador Bodegas - Recicley MX
-9.Generador Bodegas/2.Recicley MX S.A. de C.V./1.Madera Independencia
-9.Generador Bodegas/2.Recicley MX S.A. de C.V./2.Johnson
-9.Generador Bodegas/2.Recicley MX S.A. de C.V./3.Segregacion Ii
-9.Generador Bodegas/2.Recicley MX S.A. de C.V./4.Segregacion I
-9.Generador Bodegas/2.Recicley MX S.A. de C.V./5.Composta
+1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./1.Madera Independencia
+1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./2.Johnson
+1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./3.Segregacion Ii
+1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./4.Segregacion I
+1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./5.Composta
 
 # 9. Generador Bodegas - Foráneos
-9.Generador Bodegas/3.Foraneos/Guadalajara
-9.Generador Bodegas/3.Foraneos/Guanajuato
-9.Generador Bodegas/3.Foraneos/Herreros
-9.Generador Bodegas/3.Foraneos/Monterrey
-9.Generador Bodegas/3.Foraneos/Nave 26
-9.Generador Bodegas/3.Foraneos/Nave 27
-9.Generador Bodegas/3.Foraneos/Pintores
-9.Generador Bodegas/3.Foraneos/Puebla
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Guadalajara
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Guanajuato
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Herreros
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Monterrey
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Nave 26
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Nave 27
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Pintores
+1.Calidad-Gestoría/9.Generador Bodegas/3.Foraneos/Puebla
 
 # 10. LAU CDMX
-10.LAU CDMX
+1.Calidad-Gestoría/10.LAU CDMX
 
 # 11. Ramir 2026
-11.Ramir 2026/Recicley MX SA de CV
-11.Ramir 2026/Recuperadora de Materiales Ocampo de Toluca SA de CV
+1.Calidad-Gestoría/11.Ramir 2026/Recicley MX SA de CV
+1.Calidad-Gestoría/11.Ramir 2026/Recuperadora de Materiales Ocampo de Toluca SA de CV
 
 # 12. Permisos de Acopio - Foráneos
-12.Permisos de Acopio/FORANEOS/GUADALAJARA
-12.Permisos de Acopio/FORANEOS/GUADALAJARA CARTA FICTA Y QUEJA ADMINISTRATIVA 20-01-2026
-12.Permisos de Acopio/FORANEOS/GUANAJUATO
-12.Permisos de Acopio/FORANEOS/HERREROS
-12.Permisos de Acopio/FORANEOS/MONTERREY
-12.Permisos de Acopio/FORANEOS/NAVE 26
-12.Permisos de Acopio/FORANEOS/NAVE 27
-12.Permisos de Acopio/FORANEOS/PINTORES
-12.Permisos de Acopio/FORANEOS/PUEBLA
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/GUADALAJARA
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/GUADALAJARA CARTA FICTA Y QUEJA ADMINISTRATIVA 20-01-2026
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/GUANAJUATO
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/HERREROS
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/MONTERREY
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/NAVE 26
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/NAVE 27
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/PINTORES
+1.Calidad-Gestoría/12.Permisos de Acopio/FORANEOS/PUEBLA
 
 # 12. Permisos de Acopio - Recicley MX
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./1.Queretaro
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./2.Madera Independencia
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./3.Segregación I
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./4.Segregación II
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./5.Chatarra
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./6.RAMIR RMX
-12.Permisos de Acopio/RecicleyMX S.A. de C.V./7.RECI-009 DUCTO DE GAS
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./1.Queretaro
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./2.Madera Independencia
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./3.Segregación I
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./4.Segregación II
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./5.Chatarra
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./6.RAMIR RMX
+1.Calidad-Gestoría/12.Permisos de Acopio/RecicleyMX S.A. de C.V./7.RECI-009 DUCTO DE GAS
 
 # 12. Permisos de Acopio - RMO
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Bascula
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Caf-Contables
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.Destrucciones
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Plásticos
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Ramir y plan de manejo
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/1.Guadalajara
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/2.Guanajuato
-12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/3.Monterrey
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Bascula
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./2.Caf-Contables
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.Destrucciones
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Plásticos
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Ramir y plan de manejo
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/1.Guadalajara
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/2.Guanajuato
+1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/3.Monterrey
 
 # 14. Dictamen de Factibilidad de agua y drenaje
-14.Dictamen de Factibilidad de agua y drenaje/1.Composta 2
-14.Dictamen de Factibilidad de agua y drenaje/2.Almacen Johnson
-14.Dictamen de Factibilidad de agua y drenaje/3.Segregación I y II
-14.Dictamen de Factibilidad de agua y drenaje/4.Composta Viejita
-14.Dictamen de Factibilidad de agua y drenaje/5.Destrucciones
-14.Dictamen de Factibilidad de agua y drenaje/6.CAF-Contables
-14.Dictamen de Factibilidad de agua y drenaje/7.Plásticos
-14.Dictamen de Factibilidad de agua y drenaje/8.Taller-Reci 016
-14.Dictamen de Factibilidad de agua y drenaje/9.Xhala
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/1.Composta 2
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/2.Almacen Johnson
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/3.Segregación I y II
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/4.Composta Viejita
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/5.Destrucciones
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/6.CAF-Contables
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/7.Plásticos
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/8.Taller-Reci 016
+1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/9.Xhala
 
 # 15. Alineamiento y Numero Oficial
-15.Alineamiento y Numero Oficial/1.Bascula
-15.Alineamiento y Numero Oficial/2.Reci 16-Taller
-15.Alineamiento y Numero Oficial/3.Caf-Contables
-15.Alineamiento y Numero Oficial/4.Composta Viejita
-15.Alineamiento y Numero Oficial/5.Destrucciones
-15.Alineamiento y Numero Oficial/6.Estacionamiento
-15.Alineamiento y Numero Oficial/7.Plásticos
-15.Alineamiento y Numero Oficial/8.Segregacion I y II
-15.Alineamiento y Numero Oficial/9.Chatarra
-15.Alineamiento y Numero Oficial/10.Segracion III
-15.Alineamiento y Numero Oficial/11.Johnson
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/1.Bascula
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/2.Reci 16-Taller
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/3.Caf-Contables
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/4.Composta Viejita
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/5.Destrucciones
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/6.Estacionamiento
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/7.Plásticos
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/8.Segregacion I y II
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/9.Chatarra
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/10.Segracion III
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/11.Johnson
 
 # 15. Alineamiento y Numero Oficial - Foráneos
-15.Alineamiento y Numero Oficial/Foraneos/1.Guanajuato
-15.Alineamiento y Numero Oficial/Foraneos/2.Xhala 2
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/Foraneos/1.Guanajuato
+1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/Foraneos/2.Xhala 2
 
 # 16. Condicionantes Liberadas 2025
-16.Condicionantes Liberadas 2025/1.Johnson
-16.Condicionantes Liberadas 2025/2.CAF-Contables
-16.Condicionantes Liberadas 2025/3.Segregación I
-16.Condicionantes Liberadas 2025/4.Segregación II
-16.Condicionantes Liberadas 2025/5.Plásticos
-16.Condicionantes Liberadas 2025/6.Destrucciones
-16.Condicionantes Liberadas 2025/7.Madera I
-16.Condicionantes Liberadas 2025/8.Composta
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/1.Johnson
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/2.CAF-Contables
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/3.Segregación I
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/4.Segregación II
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/5.Plásticos
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/6.Destrucciones
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/7.Madera I
+1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/8.Composta
 
 # 17. Usos de Suelo
-17.Usos de Suelo/1.Bascula
-17.Usos de Suelo/2.Reci 16-Taller
-17.Usos de Suelo/4.Composta viejita
-17.Usos de Suelo/5.El dorado
-17.Usos de Suelo/6.Destrucciones
-17.Usos de Suelo/7.Johnson
-17.Usos de Suelo/8.Segregacion 1 y 2
-17.Usos de Suelo/9.Segregación 3
-17.Usos de Suelo/10.Chatarra Triangulo
+1.Calidad-Gestoría/17.Usos de Suelo/1.Bascula
+1.Calidad-Gestoría/17.Usos de Suelo/2.Reci 16-Taller
+1.Calidad-Gestoría/17.Usos de Suelo/4.Composta viejita
+1.Calidad-Gestoría/17.Usos de Suelo/5.El dorado
+1.Calidad-Gestoría/17.Usos de Suelo/6.Destrucciones
+1.Calidad-Gestoría/17.Usos de Suelo/7.Johnson
+1.Calidad-Gestoría/17.Usos de Suelo/8.Segregacion 1 y 2
+1.Calidad-Gestoría/17.Usos de Suelo/9.Segregación 3
+1.Calidad-Gestoría/17.Usos de Suelo/10.Chatarra Triangulo
 
 # 17. Usos de Suelo - Foráneos
-17.Usos de Suelo/FORANEOS/1.Guadalajara
-17.Usos de Suelo/FORANEOS/2.Guanajuato
-17.Usos de Suelo/FORANEOS/3.Xhala 2
-17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 26
-17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 27
-17.Usos de Suelo/FORANEOS/5.San Luis Potosi/HERREROS
-17.Usos de Suelo/FORANEOS/5.San Luis Potosi/PINTORES
-17.Usos de Suelo/FORANEOS/6.Monterrey
-17.Usos de Suelo/FORANEOS/7.Puebla
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/1.Guadalajara
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/2.Guanajuato
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/3.Xhala 2
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 26
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/4.Queretaro/NAVE 27
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/5.San Luis Potosi/HERREROS
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/5.San Luis Potosi/PINTORES
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/6.Monterrey
+1.Calidad-Gestoría/17.Usos de Suelo/FORANEOS/7.Puebla
 
 # 13. Proteccion Civil
-13.Proteccion Civil/1.Reci 16-Taller
-13.Proteccion Civil/2.Bascula
-13.Proteccion Civil/3.CAF-Contables
-13.Proteccion Civil/4.Composta viejita
-13.Proteccion Civil/5.Composta 2
-13.Proteccion Civil/6.Xhala
-13.Proteccion Civil/7.Segregación I y II
-13.Proteccion Civil/8.Cruz Blanca
-13.Proteccion Civil/9.Destrucciones
-13.Proteccion Civil/10.Ducto de gas
-13.Proteccion Civil/11.El dorado
-13.Proteccion Civil/12.Frente a Johnson
-13.Proteccion Civil/13.Madera Independencia
-13.Proteccion Civil/14.Madera Matamoros
-13.Proteccion Civil/15.Madera Hidalgo
-13.Proteccion Civil/16.Johnson
-13.Proteccion Civil/17.Patio de Maniobras
-13.Proteccion Civil/18.Segregacion III
-13.Proteccion Civil/19.Plásticos
-13.Proteccion Civil/20.Triangulo Chatarra
+1.Calidad-Gestoría/13.Proteccion Civil/1.Reci 16-Taller
+1.Calidad-Gestoría/13.Proteccion Civil/2.Bascula
+1.Calidad-Gestoría/13.Proteccion Civil/3.CAF-Contables
+1.Calidad-Gestoría/13.Proteccion Civil/4.Composta viejita
+1.Calidad-Gestoría/13.Proteccion Civil/5.Composta 2
+1.Calidad-Gestoría/13.Proteccion Civil/6.Xhala
+1.Calidad-Gestoría/13.Proteccion Civil/7.Segregación I y II
+1.Calidad-Gestoría/13.Proteccion Civil/8.Cruz Blanca
+1.Calidad-Gestoría/13.Proteccion Civil/9.Destrucciones
+1.Calidad-Gestoría/13.Proteccion Civil/10.Ducto de gas
+1.Calidad-Gestoría/13.Proteccion Civil/11.El dorado
+1.Calidad-Gestoría/13.Proteccion Civil/12.Frente a Johnson
+1.Calidad-Gestoría/13.Proteccion Civil/13.Madera Independencia
+1.Calidad-Gestoría/13.Proteccion Civil/14.Madera Matamoros
+1.Calidad-Gestoría/13.Proteccion Civil/15.Madera Hidalgo
+1.Calidad-Gestoría/13.Proteccion Civil/16.Johnson
+1.Calidad-Gestoría/13.Proteccion Civil/17.Patio de Maniobras
+1.Calidad-Gestoría/13.Proteccion Civil/18.Segregacion III
+1.Calidad-Gestoría/13.Proteccion Civil/19.Plásticos
+1.Calidad-Gestoría/13.Proteccion Civil/20.Triangulo Chatarra
 
 # 13. Proteccion Civil - Almacén Foráneos
-13.Proteccion Civil/PC ALMACEN FORANEOS/GUADALAJARA
-13.Proteccion Civil/PC ALMACEN FORANEOS/GUANAJUATO
-13.Proteccion Civil/PC ALMACEN FORANEOS/HERREROS
-13.Proteccion Civil/PC ALMACEN FORANEOS/MONTERREY
-13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 26
-13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 27
-13.Proteccion Civil/PC ALMACEN FORANEOS/PINTORES
-13.Proteccion Civil/PC ALMACEN FORANEOS/PUEBLA
-13.Proteccion Civil/PC ALMACEN FORANEOS/VENCIDOS
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/GUADALAJARA
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/GUANAJUATO
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/HERREROS
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/MONTERREY
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 26
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/NAVE 27
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/PINTORES
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/PUEBLA
+1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/VENCIDOS
+
+# 6. Ventas - Convenios Clientes
+6.Ventas/1.Convenios Clientes/2.Ecofibras
+6.Ventas/1.Convenios Clientes/3.Lycan-Cartón
+6.Ventas/1.Convenios Clientes/4.El Capricho
+
+# 6. Ventas - Permisos Clientes
+6.Ventas/2.Permisos Clientes/3.Lycan-Cartón
+
+# 3. Comercial - Proveedores de Servicios
+3.Comercial/3.Proveedores de Servicios/3.Geocycle
+3.Comercial/3.Proveedores de Servicios/18.Full Engineering-RP-SLP

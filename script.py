@@ -10,24 +10,27 @@ from collections import defaultdict
 
 # ============ CONFIGURACIÓN ============
 
-# Raíz común de "Calidad-Gestoría" - todo vive en volume4
-_BASE_CALIDAD = "/volume4/Contraloría/1.Calidad-Gestoría"
+# Raíz común de "Contraloría" - todo vive en volume4. Cada linea de
+# carpetas.txt es relativa a esta raiz y arranca con el area dentro de
+# Contraloría (1.Calidad-Gestoría, 6.Ventas, 3.Comercial, etc.), lo que
+# permite monitorear carpetas de mas de un area sin tocar este script.
+_BASE_CONTRALORIA = "/volume4/Contraloría"
 
 # Archivo de texto con la lista blanca de carpetas a monitorear (una ruta
-# relativa a _BASE_CALIDAD por linea, ver carpetas.txt junto a este script).
-# Para agregar o quitar una carpeta monitoreada basta con editar ese archivo:
-# no requiere tocar ni volver a desplegar script.py.
+# relativa a _BASE_CONTRALORIA por linea, ver carpetas.txt junto a este
+# script). Para agregar o quitar una carpeta monitoreada basta con editar
+# ese archivo: no requiere tocar ni volver a desplegar script.py.
 _ARCHIVO_CARPETAS = "carpetas.txt"
 
 
 def _cargar_carpetas(nombre_archivo=_ARCHIVO_CARPETAS):
     """Lee la lista blanca de carpetas desde un archivo de texto plano junto
-    a este script: una ruta relativa a _BASE_CALIDAD por linea. Ignora
+    a este script: una ruta relativa a _BASE_CONTRALORIA por linea. Ignora
     lineas vacias y comentarios (que inician con #)."""
     ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), nombre_archivo)
     with open(ruta, encoding="utf-8") as f:
         return [
-            f"{_BASE_CALIDAD}/{linea.strip()}"
+            f"{_BASE_CONTRALORIA}/{linea.strip()}"
             for linea in f
             if linea.strip() and not linea.strip().startswith("#")
         ]
@@ -133,11 +136,15 @@ def _clave_orden_categoria(categoria):
 
 
 def _categoria_de(raiz):
-    """Extrae el nombre de la carpeta numerada de primer nivel (p.ej.
-    '3.Licencias de Funcionamiento') a partir de la ruta absoluta de un
-    documento, para poder agrupar y enviar un correo por tramite."""
-    resto = raiz[len(_BASE_CALIDAD):].lstrip("/")
-    return resto.split("/")[0]
+    """Extrae el nombre del tramite (p.ej. '3.Licencias de Funcionamiento' o,
+    en el area de Ventas, '1.Convenios Clientes') a partir de la ruta
+    absoluta de un documento, para poder agrupar y enviar un correo por
+    tramite. El primer segmento de la ruta (relativa a _BASE_CONTRALORIA) es
+    el area (1.Calidad-Gestoría, 6.Ventas, 3.Comercial, ...); el segundo es
+    el tramite dentro de esa area."""
+    resto = raiz[len(_BASE_CONTRALORIA):].lstrip("/")
+    partes = resto.split("/")
+    return partes[1] if len(partes) > 1 else partes[0]
 
 
 def _agrupar_por_categoria(documentos):
