@@ -36,6 +36,7 @@
 
 # 3. Licencias de Funcionamiento - Foráneos
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Guadalajara
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Monterrey
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Puebla
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/San Luis Potosí
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Foraneos/Xhala
@@ -55,6 +56,9 @@
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/12.Plásticos
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/13.Triangulo Chatarra
 1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/14.Segregacion III
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/15.Frente a Johnson
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/16.Johnson
+1.Calidad-Gestoría/3.Licencias de Funcionamiento/Licencias de Funcionamiento Toluca/17.RECI 16-EX TALLER
 
 # 4. Permisos de Aprovechamiento - RMO
 1.Calidad-Gestoría/4.Permisos de Aprovechamiento/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./Estado de México/1.Bascula
