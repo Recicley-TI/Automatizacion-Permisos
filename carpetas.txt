@@ -352,13 +352,94 @@
 1.Calidad-Gestoría/13.Proteccion Civil/PC ALMACEN FORANEOS/VENCIDOS
 
 # 6. Ventas - Convenios Clientes
+6.Ventas/1.Convenios Clientes/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./1.Ecofibras Ponderosa
 6.Ventas/1.Convenios Clientes/2.Ecofibras
 6.Ventas/1.Convenios Clientes/3.Lycan-Cartón
 6.Ventas/1.Convenios Clientes/4.El Capricho
+6.Ventas/1.Convenios Clientes/5.Owens
+6.Ventas/1.Convenios Clientes/6.Brimex-Lodos MTH
+6.Ventas/1.Convenios Clientes/7.Grupak
 
 # 6. Ventas - Permisos Clientes
+6.Ventas/2.Permisos Clientes/1.Cartones Ponderosa
+6.Ventas/2.Permisos Clientes/2.El capricho
 6.Ventas/2.Permisos Clientes/3.Lycan-Cartón
+6.Ventas/2.Permisos Clientes/4.Recicley MX-Cartón
+6.Ventas/2.Permisos Clientes/5.Recicley MX-Chatarra
+6.Ventas/2.Permisos Clientes/6.Recicley MX-Composta-Organicos
+6.Ventas/2.Permisos Clientes/7.Recicley MX-Madera
+6.Ventas/2.Permisos Clientes/8.Recicley MX-Plástico
+6.Ventas/2.Permisos Clientes/9.RMO-Plástico
+6.Ventas/2.Permisos Clientes/10.RMO Forraje-Organicos-Barredura
+6.Ventas/2.Permisos Clientes/11.RMO-Vidrio
+6.Ventas/2.Permisos Clientes/12.Owens-Vidrio
+6.Ventas/2.Permisos Clientes/13.RMO-Chatarra
+6.Ventas/2.Permisos Clientes/14.Brimex Energy-lodos MTH
+6.Ventas/2.Permisos Clientes/14.RMO-Madera-SLP
+6.Ventas/2.Permisos Clientes/15.RMO-RSU
+6.Ventas/2.Permisos Clientes/16.Recicley MX-Barredura
+6.Ventas/2.Permisos Clientes/17.Grupak
 
 # 3. Comercial - Proveedores de Servicios
 3.Comercial/3.Proveedores de Servicios/3.Geocycle
 3.Comercial/3.Proveedores de Servicios/18.Full Engineering-RP-SLP
+
+# 2. Patrimonial - Documentos Institucionales (carpeta completa; incluye sus
+# subcarpetas de Recicley MX S.A. de C.V. y Recuperadora de Materiales Ocampo
+# de Toluca S.A. de C.V. por recorrido recursivo)
+2.Patrimonial/1.Documentos Institucionales
+
+# 2. Patrimonial - Certificados de Registros de Predios Municipales
+2.Patrimonial/2.Certificados de Registros de Predios Municipales/Contables
+2.Patrimonial/2.Certificados de Registros de Predios Municipales/Reci 016-Ex taller
+2.Patrimonial/2.Certificados de Registros de Predios Municipales/Segregación 1
+
+# 2. Patrimonial - Contratos de Bodegas Arrendadas
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Bodega 26 Querétaro
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Bodega SLP
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Guadalajara
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Guanajuato
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Monterrey
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Puebla
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Xhala
+2.Patrimonial/3.Contratos de Bodegas Arrendadas/Xochimilco
+
+# 2. Patrimonial - Contratos de Bodegas en Comodato
+2.Patrimonial/4.Contratos de Bodegas en Comodato/BASCULA
+2.Patrimonial/4.Contratos de Bodegas en Comodato/COMPOSTA
+2.Patrimonial/4.Contratos de Bodegas en Comodato/CONTABLES
+2.Patrimonial/4.Contratos de Bodegas en Comodato/DESTRUCCIONES
+2.Patrimonial/4.Contratos de Bodegas en Comodato/JOHNSON
+2.Patrimonial/4.Contratos de Bodegas en Comodato/PLÁSTICOS
+2.Patrimonial/4.Contratos de Bodegas en Comodato/RECI 2
+2.Patrimonial/4.Contratos de Bodegas en Comodato/RECI 016-EX TALLER
+2.Patrimonial/4.Contratos de Bodegas en Comodato/RECI-008 MADERA CRUZ BLANCA
+2.Patrimonial/4.Contratos de Bodegas en Comodato/SEGREGACION 1
+2.Patrimonial/4.Contratos de Bodegas en Comodato/SEGREGACIÓN 2
+2.Patrimonial/4.Contratos de Bodegas en Comodato/TRIANGULO CHATARRA RECI 006
+
+# 2. Patrimonial - Predial Bodegas
+2.Patrimonial/5.Predial Bodegas/1.Bascula
+2.Patrimonial/5.Predial Bodegas/2.Reci 16-Taller
+2.Patrimonial/5.Predial Bodegas/3.CAF-Contables
+2.Patrimonial/5.Predial Bodegas/4.Composta viejita
+2.Patrimonial/5.Predial Bodegas/5.Composta 2
+2.Patrimonial/5.Predial Bodegas/6.Destrucciones
+2.Patrimonial/5.Predial Bodegas/7.Ducto de gas
+2.Patrimonial/5.Predial Bodegas/8.Estacionamiento
+2.Patrimonial/5.Predial Bodegas/9.Frente a Johnson
+2.Patrimonial/5.Predial Bodegas/10.Madera Independencia
+2.Patrimonial/5.Predial Bodegas/11.Johnson
+2.Patrimonial/5.Predial Bodegas/12.Frente a Taller
+2.Patrimonial/5.Predial Bodegas/13.Segregacion 3
+2.Patrimonial/5.Predial Bodegas/14.Plásticos
+2.Patrimonial/5.Predial Bodegas/15.Chatarra
+2.Patrimonial/5.Predial Bodegas/16.Segregacion 1
+2.Patrimonial/5.Predial Bodegas/17.Segregacion 2
+2.Patrimonial/5.Predial Bodegas/18.Cruz Blanca (Madera Nuevo)
+2.Patrimonial/5.Predial Bodegas/19.Reci 12. Almacén Paola
+2.Patrimonial/5.Predial Bodegas/FORANEOS/1.Queretaro
+2.Patrimonial/5.Predial Bodegas/FORANEOS/2.Monterrey
+2.Patrimonial/5.Predial Bodegas/FORANEOS/3.San Luis Potosí
+2.Patrimonial/5.Predial Bodegas/FORANEOS/4.Guadalajara
+2.Patrimonial/5.Predial Bodegas/FORANEOS/5.Guanajuato

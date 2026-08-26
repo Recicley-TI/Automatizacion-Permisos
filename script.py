@@ -12,8 +12,9 @@ from collections import defaultdict
 
 # Raíz común de "Contraloría" - todo vive en volume4. Cada linea de
 # carpetas.txt es relativa a esta raiz y arranca con el area dentro de
-# Contraloría (1.Calidad-Gestoría, 6.Ventas, 3.Comercial, etc.), lo que
-# permite monitorear carpetas de mas de un area sin tocar este script.
+# Contraloría (1.Calidad-Gestoría, 2.Patrimonial, 3.Comercial, 6.Ventas,
+# etc.), lo que permite monitorear carpetas de mas de un area sin tocar este
+# script.
 _BASE_CONTRALORIA = "/volume4/Contraloría"
 
 # Archivo de texto con la lista blanca de carpetas a monitorear (una ruta
@@ -130,8 +131,8 @@ def _categoria_de(raiz):
     en el area de Ventas, '1.Convenios Clientes') a partir de la ruta
     absoluta de un documento, para poder agrupar y enviar un correo por
     tramite. El primer segmento de la ruta (relativa a _BASE_CONTRALORIA) es
-    el area (1.Calidad-Gestoría, 6.Ventas, 3.Comercial, ...); el segundo es
-    el tramite dentro de esa area."""
+    el area (1.Calidad-Gestoría, 2.Patrimonial, 3.Comercial, 6.Ventas, ...);
+    el segundo es el tramite dentro de esa area."""
     resto = raiz[len(_BASE_CONTRALORIA):].lstrip("/")
     partes = resto.split("/")
     return partes[1] if len(partes) > 1 else partes[0]
