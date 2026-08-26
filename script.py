@@ -44,16 +44,6 @@ DIAS_ALERTA = 30
 GMAIL_USER = "ti@recicleymx.com"
 DESTINATARIO_PRINCIPAL = "legal.permisos@recicleymx.com"
 CC = [
-    "leonardogrl18@gmail.com",
-    "aux.contraloria@recicleymx.com",
-    "contraloriainterna1@recicleymx.com"
-]
-
-#
-#  Destinatarios del correo de acuses (por defecto, los mismos que el principal)
-DESTINATARIO_ACUSES = "legal.permisos@recicleymx.com"
-CC_ACUSES = [
-    "leonardogrl18@gmail.com",
     "aux.contraloria@recicleymx.com",
     "contraloriainterna1@recicleymx.com"
 ]
@@ -164,23 +154,11 @@ _ICONO_ATRASADO = "⛔"
 _ICONO_PROXIMO = "⚠️"
 
 
-def _construir_cuerpo(documentos, encabezado):
-    """Genera un cuerpo de correo en texto plano, legible y agrupado por carpeta."""
-    total = len(documentos)
+def _construir_seccion(documentos, titulo):
+    """Genera el bloque de texto de una seccion (vencimientos o acuses),
+    agrupado por carpeta. Devuelve una lista de lineas."""
     grupos = _agrupar_por_carpeta(documentos)
-
-    ANCHO = 60
-    SEP = "━" * ANCHO
-
-    lineas = [
-        SEP,
-        f"  {encabezado}",
-        f"  Generado: {datetime.now().strftime('%d-%m-%Y %H:%M')}"
-        f"      Total: {total} documentos",
-        SEP,
-        "",
-    ]
-
+    lineas = [f"{titulo} ({len(documentos)})", ""]
     for carpeta, items in grupos.items():
         lineas.append(f"📁 {carpeta}")
         ancho_estado = max(len(estado) for _, _, estado in items)
@@ -191,6 +169,30 @@ def _construir_cuerpo(documentos, encabezado):
                 f"        {estado.ljust(ancho_estado)}  (vence {vence.strftime('%d-%m-%Y')})"
             )
         lineas.append("")
+    return lineas
+
+
+def _construir_cuerpo(categoria, vencimientos, acuses):
+    """Genera el cuerpo de correo en texto plano de una categoria, con las
+    secciones de vencimientos y acuses unidas (se omite la seccion vacia)."""
+    total = len(vencimientos) + len(acuses)
+
+    ANCHO = 60
+    SEP = "━" * ANCHO
+
+    lineas = [
+        SEP,
+        f"  ALERTAS Y ACUSES — {categoria}",
+        f"  Generado: {datetime.now().strftime('%d-%m-%Y %H:%M')}"
+        f"      Total: {total} documentos",
+        SEP,
+        "",
+    ]
+
+    if vencimientos:
+        lineas += _construir_seccion(vencimientos, f"{_ICONO_ATRASADO} VENCIMIENTOS DE PERMISOS")
+    if acuses:
+        lineas += _construir_seccion(acuses, "📋 ACUSES EN SEGUIMIENTO")
 
     lineas.append(SEP)
     lineas.append("Correo generado automáticamente por el sistema de alertas de Recicley.")
@@ -211,18 +213,19 @@ def _enviar(destinatario_principal, cc, asunto, cuerpo):
         servidor.sendmail(GMAIL_USER, destinatarios_totales, msg.as_string())
 
 
-def enviar_correo_vencimientos(categoria, documentos):
-    asunto = f"Alerta: {len(documentos)} permiso(s) por vencer o vencidos — {categoria}"
-    cuerpo = _construir_cuerpo(documentos, f"ALERTA DE VENCIMIENTO DE PERMISOS — {categoria}")
+def enviar_correo(categoria, vencimientos, acuses):
+    """Envia un unico correo por categoria con las alertas de vencimiento
+    y los acuses en seguimiento juntos."""
+    partes = []
+    if vencimientos:
+        partes.append(f"{len(vencimientos)} vencimiento(s)")
+    if acuses:
+        partes.append(f"{len(acuses)} acuse(s)")
+
+    asunto = f"Alertas: {' y '.join(partes)} — {categoria}"
+    cuerpo = _construir_cuerpo(categoria, vencimientos, acuses)
     _enviar(DESTINATARIO_PRINCIPAL, CC, asunto, cuerpo)
-    print(f"Correo de vencimientos enviado correctamente ({categoria}).")
-
-
-def enviar_correo_acuses(categoria, documentos):
-    asunto = f"Acuses en seguimiento: {len(documentos)} documento(s) — {categoria}"
-    cuerpo = _construir_cuerpo(documentos, f"LISTADO DE ACUSES EN SEGUIMIENTO — {categoria}")
-    _enviar(DESTINATARIO_ACUSES, CC_ACUSES, asunto, cuerpo)
-    print(f"Correo de acuses enviado correctamente ({categoria}).")
+    print(f"Correo enviado correctamente ({categoria}).")
 
 
 if __name__ == "__main__":
@@ -234,14 +237,18 @@ if __name__ == "__main__":
 
     vencimientos, acuses = escanear()
 
-    if vencimientos:
-        for categoria, documentos in _agrupar_por_categoria(vencimientos).items():
-            enviar_correo_vencimientos(categoria, documentos)
-    else:
-        print("No hay permisos proximos a vencer.")
+    v_por_categoria = _agrupar_por_categoria(vencimientos)
+    a_por_categoria = _agrupar_por_categoria(acuses)
+    categorias = sorted(
+        set(v_por_categoria) | set(a_por_categoria), key=_clave_orden_categoria
+    )
 
-    if acuses:
-        for categoria, documentos in _agrupar_por_categoria(acuses).items():
-            enviar_correo_acuses(categoria, documentos)
+    if categorias:
+        for categoria in categorias:
+            enviar_correo(
+                categoria,
+                v_por_categoria.get(categoria, []),
+                a_por_categoria.get(categoria, []),
+            )
     else:
-        print("No hay acuses proximos a vencer.")
+        print("No hay permisos ni acuses proximos a vencer.")

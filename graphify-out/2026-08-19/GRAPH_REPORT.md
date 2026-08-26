@@ -1,7 +1,7 @@
-# Graph Report - Alerts  (2026-08-16)
+# Graph Report - Alerts  (2026-08-19)
 
 ## Corpus Check
-- 2 files · ~3,137 words
+- 2 files · ~4,122 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `57eda5da`
+- Built from commit: `e31d59ae`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,7 +52,7 @@ Nodes (7): _agrupar_por_carpeta(), _construir_cuerpo(), _enviar(), enviar_correo
 
 ### Community 2 - "_agrupar_por_categoria"
 Cohesion: 0.33
-Nodes (6): _agrupar_por_categoria(), _categoria_de(), _clave_orden_categoria(), Extrae el numero inicial de una carpeta (p.ej. '18' de     '18.Cedula de Zonifi, Extrae el nombre de la carpeta numerada de primer nivel (p.ej.     '3.Licencias, Agrupa documentos (vencimientos o acuses) por su carpeta numerada de     primer
+Nodes (6): _agrupar_por_categoria(), _categoria_de(), _clave_orden_categoria(), Extrae el numero inicial de una carpeta (p.ej. '18' de     '18.Cedula de Zonifi, Extrae el nombre del tramite (p.ej. '3.Licencias de Funcionamiento' o,     en e, Agrupa documentos (vencimientos o acuses) por su carpeta numerada de     primer
 
 ### Community 3 - "Configuración"
 Cohesion: 0.50
