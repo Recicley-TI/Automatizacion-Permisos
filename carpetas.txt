@@ -88,7 +88,6 @@
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/NAVE 27
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PINTORES
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PUEBLA-hasta tener liberado impacto ambiental
-1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/XOCHIMILCO
 
 # 6. Plan de Manejo - Locales Permisos 2025 (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.Destrucciones y 3.Madera I.Independencia por recorrido recursivo)
@@ -310,7 +309,6 @@
 1.Calidad-Gestoría/13.Proteccion Civil/3.CAF-Contables
 1.Calidad-Gestoría/13.Proteccion Civil/4.Composta viejita
 1.Calidad-Gestoría/13.Proteccion Civil/5.Composta 2
-1.Calidad-Gestoría/13.Proteccion Civil/6.Xhala
 1.Calidad-Gestoría/13.Proteccion Civil/7.Segregación I y II
 1.Calidad-Gestoría/13.Proteccion Civil/8.Cruz Blanca
 1.Calidad-Gestoría/13.Proteccion Civil/9.Destrucciones
@@ -321,7 +319,6 @@
 1.Calidad-Gestoría/13.Proteccion Civil/14.Madera Matamoros
 1.Calidad-Gestoría/13.Proteccion Civil/15.Madera Hidalgo
 1.Calidad-Gestoría/13.Proteccion Civil/16.Johnson
-1.Calidad-Gestoría/13.Proteccion Civil/17.Patio de Maniobras
 1.Calidad-Gestoría/13.Proteccion Civil/18.Segregacion III
 1.Calidad-Gestoría/13.Proteccion Civil/19.Plásticos
 1.Calidad-Gestoría/13.Proteccion Civil/20.Triangulo Chatarra
