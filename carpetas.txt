@@ -92,7 +92,6 @@
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/NAVE 27
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PINTORES
 1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/PUEBLA-hasta tener liberado impacto ambiental
-1.Calidad-Gestoría/6.Plan de Manejo/FORANEOS/XOCHIMILCO
 
 # 6. Plan de Manejo - Locales Permisos 2025 (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.Destrucciones y 3.Madera I.Independencia por recorrido recursivo)
@@ -121,12 +120,7 @@
 1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Foraneos/XHALA 1
 
 # 7. Impactos Ambientales - Impactos Liberados sin Condicionante
-1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/1.Contables
-1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/2.Composta viejita
 1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/3.Destrucciones
-1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/4.Plasticos
-1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/5.Segregación I y II
-1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Liberados sin Condicionante/6.Madera Independencia
 
 # 7. Impactos Ambientales - Impactos Locales (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.CAF-Contables, 3.Composta Viejita, 4.Destrucciones, 5.Ducto de gas,
@@ -202,7 +196,6 @@
 1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Destrucciones
 1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Plásticos
 1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./6.Composta Viejita
-1.Calidad-Gestoría/9.Generador Bodegas/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./7.Puebla
 
 # 9. Generador Bodegas - Recicley MX
 1.Calidad-Gestoría/9.Generador Bodegas/2.Recicley MX S.A. de C.V./1.Madera Independencia
@@ -254,9 +247,6 @@
 1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./3.Destrucciones
 1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./4.Plásticos
 1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./5.Ramir y plan de manejo
-1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/1.Guadalajara
-1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/2.Guanajuato
-1.Calidad-Gestoría/12.Permisos de Acopio/Recuperadora de Materiales Ocampo de Toluca S.A. de C.V./FORANEOS/3.Monterrey
 
 # 14. Dictamen de Factibilidad de agua y drenaje
 1.Calidad-Gestoría/14.Dictamen de Factibilidad de agua y drenaje/1.Composta 2
@@ -287,7 +277,6 @@
 1.Calidad-Gestoría/15.Alineamiento y Numero Oficial/Foraneos/2.Xhala 2
 
 # 16. Condicionantes Liberadas 2025
-1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/1.Johnson
 1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/2.CAF-Contables
 1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/3.Segregación I
 1.Calidad-Gestoría/16.Condicionantes Liberadas 2025/4.Segregación II
@@ -324,7 +313,6 @@
 1.Calidad-Gestoría/13.Proteccion Civil/3.CAF-Contables
 1.Calidad-Gestoría/13.Proteccion Civil/4.Composta viejita
 1.Calidad-Gestoría/13.Proteccion Civil/5.Composta 2
-1.Calidad-Gestoría/13.Proteccion Civil/6.Xhala
 1.Calidad-Gestoría/13.Proteccion Civil/7.Segregación I y II
 1.Calidad-Gestoría/13.Proteccion Civil/8.Cruz Blanca
 1.Calidad-Gestoría/13.Proteccion Civil/9.Destrucciones
@@ -335,7 +323,6 @@
 1.Calidad-Gestoría/13.Proteccion Civil/14.Madera Matamoros
 1.Calidad-Gestoría/13.Proteccion Civil/15.Madera Hidalgo
 1.Calidad-Gestoría/13.Proteccion Civil/16.Johnson
-1.Calidad-Gestoría/13.Proteccion Civil/17.Patio de Maniobras
 1.Calidad-Gestoría/13.Proteccion Civil/18.Segregacion III
 1.Calidad-Gestoría/13.Proteccion Civil/19.Plásticos
 1.Calidad-Gestoría/13.Proteccion Civil/20.Triangulo Chatarra
