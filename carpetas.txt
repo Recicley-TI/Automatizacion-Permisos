@@ -124,7 +124,7 @@
 
 # 7. Impactos Ambientales - Impactos Locales (carpeta completa; incluye sus subcarpetas
 # 1.Bascula, 2.CAF-Contables, 3.Composta Viejita, 4.Destrucciones, 5.Ducto de gas,
-# 6.El dorado y 7.Madera Independencia por recorrido recursivo)
+# 6.El dorado, 7.Madera Independencia y 21.Cruz Blanca por recorrido recursivo)
 1.Calidad-Gestoría/7.Impactos Ambientales/Impactos Locales
 
 # 7. Impactos Ambientales - Modificación Impactos Ambientales (carpeta completa; incluye
@@ -156,6 +156,8 @@
 1.Calidad-Gestoría/18.Cedula de Zonificación/16.Triangulo Chatarra
 1.Calidad-Gestoría/18.Cedula de Zonificación/17.Segregacion I y II
 1.Calidad-Gestoría/18.Cedula de Zonificación/18.Xhala 1
+1.Calidad-Gestoría/18.Cedula de Zonificación/20.Bascula
+1.Calidad-Gestoría/18.Cedula de Zonificación/21.Reci 007-Contables
 
 # 19. Movilidad Vial GDL y SLP
 1.Calidad-Gestoría/19.Movilidad Vial GDL y SLP
@@ -369,6 +371,14 @@
 
 # 3. Comercial - Proveedores de Servicios
 3.Comercial/3.Proveedores de Servicios/3.Geocycle
+3.Comercial/3.Proveedores de Servicios/4. SM JAL S.A. DE C.V.-Lodos
+3.Comercial/3.Proveedores de Servicios/5. Job David Hernández González-Lodos
+3.Comercial/3.Proveedores de Servicios/6.Marco Antponio Padilla Rodriguez- RP
+3.Comercial/3.Proveedores de Servicios/7.Recogreen-RP
+3.Comercial/3.Proveedores de Servicios/8.Tecnologia Ambiental Especializada-Disposición final RP-Lodos
+3.Comercial/3.Proveedores de Servicios/9.Solam-RPBI
+3.Comercial/3.Proveedores de Servicios/10.Salvador Maya Reyes-RPBI
+3.Comercial/3.Proveedores de Servicios/11.Recicley MX-RSU
 3.Comercial/3.Proveedores de Servicios/18.Full Engineering-RP-SLP
 
 # 2. Patrimonial - Documentos Institucionales (carpeta completa; incluye sus
@@ -430,3 +440,6 @@
 2.Patrimonial/5.Predial Bodegas/FORANEOS/3.San Luis Potosí
 2.Patrimonial/5.Predial Bodegas/FORANEOS/4.Guadalajara
 2.Patrimonial/5.Predial Bodegas/FORANEOS/5.Guanajuato
+
+# 7. Finanzas - REPSE
+7.Finanzas/6.REPSE/1.Recuperadora de Materiales Ocampo de Toluca S.A. de C.V.
