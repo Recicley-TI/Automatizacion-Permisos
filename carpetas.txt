@@ -380,6 +380,16 @@
 3.Comercial/3.Proveedores de Servicios/10.Salvador Maya Reyes-RPBI
 3.Comercial/3.Proveedores de Servicios/11.Recicley MX-RSU
 3.Comercial/3.Proveedores de Servicios/18.Full Engineering-RP-SLP
+3.Comercial/3.Proveedores de Servicios/14.Si equipos y Servicios-RP
+3.Comercial/3.Proveedores de Servicios/15.Recicley MX-RP
+3.Comercial/3.Proveedores de Servicios/17.RMO-Lodos
+3.Comercial/3.Proveedores de Servicios/19.EGSA Environmental S.A de C.V.
+3.Comercial/3.Proveedores de Servicios/20.SOBICEN
+3.Comercial/3.Proveedores de Servicios/21.Cipres SLP
+3.Comercial/3.Proveedores de Servicios/22.Exitium-RPBI-Puebla
+3.Comercial/3.Proveedores de Servicios/23.Brimex Energy-Lodos-SLP
+3.Comercial/3.Proveedores de Servicios/24.Ecología, Servicios y Reciclajes Ambientales ESRA-RPBI-Tech Center
+3.Comercial/3.Proveedores de Servicios/25.Bioinfect-Schmulkovsky RPBI
 
 # 2. Patrimonial - Documentos Institucionales (carpeta completa; incluye sus
 # subcarpetas de Recicley MX S.A. de C.V. y Recuperadora de Materiales Ocampo
